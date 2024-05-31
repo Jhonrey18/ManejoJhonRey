@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    color: #000;
+}
+
+.card {
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/images\(5\).jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table, th, td {
+    padding: 16px;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.table-content {
+    width: 82vw;
+    height: 90vh;
+    background: #fff5;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 6px 12px #0005;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.table-head {
+    width: 100%;
+    height: 10%;
+    background: #fff4;
+    padding: 12px 16px;
+}
+
+.table-body {
+    width: 95%;
+    max-height: calc(89% - 25px);
+    background: #fffb;
+    margin: 12px auto;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+.table-body::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.table-body::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: #0004;
+    visibility: hidden;
+}
+
+.table-body:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+
+table {
+    width: 100%;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: #d5d1defe;
+}
+
+tbody tr:nth-child(even) {
+    background: #0000000b;   
+}
+
+tbody tr:hover {
+    background: #fff6;
+}
+
+.add {
+    padding: 10px 20px;
+    margin: 0 23px;
+    background: #249d9f;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+#click {
+    display: none;
+}
+
+#click:checked ~ .modal {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px 1px #0004;
+    width: 300px;
+    height: 100%;
+    padding: 20px 50px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+h2 {
+    color: #000;
+    text-align: center;
+    font-weight: 500;
+}
+
+.fa-x {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #ff0000;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+form {
+    display: block;
+    margin: auto;
+}
+
+input, .option, .input-view {
+    width: 100%;
+    display: block;
+    border: 1px solid #000;
+    border-radius: 50px;
+    padding: 12px 20px;
+    margin: 20px auto;
+    outline: none;
+    background: #fff;
+    color: #000;
+}
+
+select {
+    cursor: pointer;
+    color: #d3d3d3;
+}
+
+select option[value=""][disabled] {
+    display: none;
+}
+
+.submit {
+    padding: 10px 20px;
+    background: #249d9f;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.view, .update, .delete {
+    padding: 5px 10px;
+    margin: 5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 12px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.view {
+    background: #1fd655;
+}
+
+.update {
+    background: #ffbf00;
+}
+
+.delete {
+    background: #ff0000;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.update-content, .view-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 300px;
+    height: 90%;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px 1px #0004;
+}
+
+.close-update, .close-view {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #ff0000;
+    font-size: 25px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.update-modal.active .update-content {
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.view-modal.active .view-content {
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}

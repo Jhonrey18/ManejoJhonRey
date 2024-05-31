@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+	<meta charset "UTF-8">
+	<title>User Page</title>
+	<link rel="stylesheet" href="user.css">
+	<!-- Font Awsome Cdn Link -->
+	<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+</head>
+<body>
+	<div class="container">
+		<nav>
+			<ul>
+				<li><a href="#" class="logo">
+				<img src="img.png" alt="hakdog">
+				<span class="nav-item">User</span>
+				</a></li>
+				<li><a href="#">
+				<i class="fas fa-home"></i>
+				<span class="nav-item">Home</span>
+				</a></li>
+				<li><a href="">
+				<i class="fas fa-user"></i>
+				<span class="nav-item">Profile</span>
+				</a></li>
+				<li><a href="">
+				<i class="fas fa-cog"></i>
+				<span class="nav-item">Settings</span>
+				</a></li>
+				<li><a href="">
+				<i class="fas fa-question-circle"></i>
+				<span class="nav-item">Help</span>
+				</a></li>
+				<li><a href="login.php">
+				<i class="fas fa-sign-out-alt"></i>
+				<span class="nav-item">Logout</span>
+				</a></li>
+			</ul>
+		</nav>
+		
+		<section class="main">
+			<div>
+				<h1>Skills</h1>
+				<i class="fas far-user-cog"></i>
+			</div>
+			
+			<section class="main-course">
+				<h1>My Courses</h1>
+				<div class="course-box">
+					<ul>
+						<li class="active">In Process</li>
+						<li>Explore</li>
+						<li>Incoming</li>
+						<li>Finished</li>
+					</ul>
+					<div class="course">
+						<div class="box">
+							<h3>HTML</h3>
+							<p>80% - process</p>
+							<button>Continue</button>
+							<i class="fab fas-html5 html"></i>
+						</div>
+						<div class="box">
+							<h3>CSS</h3>
+							<p>80% - process</p>
+							<button>Continue</button>
+							<i class="fab fas-css3-alt css"></i>
+						</div>
+						<div class="box">
+							<h3>JaveScript</h3>
+							<p>80% - process</p>
+							<button>Continue</button>
+							<i class="fab fas-js-square js"></i>
+						</div>
+					</div>
+				</div>
+			</section>
+		</section>
+	</div>
+</body>
